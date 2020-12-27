@@ -1,0 +1,156 @@
+.homeCont{
+    height: 100vmax;
+    width: 100%;
+    background-color: rgb(245, 224, 105);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbarTop{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(177, 157, 47);
+    border-left: solid gray 2px;
+    border-right: solid gray 2px;
+    border-bottom: solid gray 2px;
+}
+
+.logoText{
+    color: whitesmoke;
+}
+
+.mainCont{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blogContainer{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 75%;
+    border: solid gray 3px;
+    margin-top: 2%;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.imgCont{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-image: url('../Images/895bd563-landscape-mountain-mountain-peak-52710-1024x683.jpg'); */
+    background-size: cover;
+}
+
+.blogTitle{
+    color: whitesmoke;
+    text-align: left;
+    margin-top: 30%;
+    margin-left: 1.25%;
+    font-size: 25px;
+}
+
+.blogInfoCont{
+    height: 30%;
+    width: 100%;
+    background-color: whitesmoke;
+    position: relative;
+    border-top: solid gray 2px;
+}
+
+.blogSnippet{
+    padding-top: .50%;
+    padding-left: .50%;
+    padding-right: .50%;
+    height: 100%;
+    width: 100%;
+    border-bottom: rgb(143, 143, 143) solid .25px;
+    margin-bottom: 3%;
+
+}
+
+.blogBodyText{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1.50%;
+    padding-top: .75%;
+    padding-right: 1.10%;
+}
+
+.otherInfo{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+
+.authorCont{
+    height: 55%;
+    width: 90%;
+    border-radius: 25px;
+    display: flex;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.authorImg{
+    /* height: 60px; */
+    /* width: 90px; */
+    height: 100%;
+    width: 34%;
+    border-radius: 60px;
+    background-color: rgb(172, 172, 172);
+    border: solid black 1px;
+    z-index: 100;
+    margin-top: .50%;
+    margin-bottom: 5%;
+}
+
+.authorUsername{
+    height: 46%;
+    width: 100%;
+    align-self: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid black;
+    background-color: rgb(172, 172, 172);
+    margin-left: -2.80%;
+    margin-top: 3.65%;
+    z-index: 1;
+}
+
+.usernameText{
+    text-align: center;
+}
+
+.likeCont{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 74%;
+    z-index: 100;
+    margin-top: 1.5%;
+}
+
+.heartBtn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    height: 100%;
+    width: 35%;
+    font-size: 45px;
+    margin-top: 1%;
+}
+
+.likeCountText{
+    font-size: 20px;
+    padding-top: 50%;
+    padding-right: .25%;    
+}

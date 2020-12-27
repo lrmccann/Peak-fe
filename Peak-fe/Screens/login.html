@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peak Media</title>
+    <link rel="stylesheet" type="text/css" href="../assets/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid loginCont">
+        <div class="navBar">
+            <div class="navCont-flex">
+                <button class="loginBtn" id="navBtn">
+                    <p id="navBarBtnText">Login</p>
+                </button>
+                <button class="signUpBtn" id="navBtn">
+                    <p id="navBarBtnText">Sign Up</p>
+                </button>
+                <button class="donateBtn" id="navBtn">
+                    <p id="navBarBtnText">Donate</p>
+                </button>
+                <button class="aboutUsBtn" id="navBtn">
+                    <p id="navBarBtnText">About Us</p>
+                </button>
+                <div class="myInfoDiv">
+                    <h2 id="navBarBtnTextTwo">Logan McCann</h2>
+                    <h3 id="navBarBtnTextTwo">Web Dev</h3>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div class="quoteCont">
+                <h1 class="quoteText">"Blogging is a conversation, not a code"</h1>
+                <p class="quoteTextTwo"> - Mike Butcher</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="loginModal">
+        <div class="loginModalHeader">
+            <button class="closeModalBtn">
+                <h1 class="modalXBtn">X</h1>
+            </button>
+        </div>
+        <div class="loginModalBody">
+            <input type="text" class="userNameInput" id="inputLoginText" placeholder="Username(8-20 Characters)">
+            <input type="password" class="passwordInput" id="inputLoginText" placeholder="Password(8-20 Characters)">
+            <button class="forgotPasswordBtn">
+                <p class="forgotPassBtn">Forgot Password?</p>
+            </button>
+            <button class="modalLogin">
+                <h3 class="modalFinalLoginBtn">Login</h3>
+            </button>
+        </div>
+        <!-- <div class="loginModalFooter">
+
+                </div> -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../assets/login.js"></script>
+    <script src="../assets/navBar.js"></script>
+</body>
+
+</html>
