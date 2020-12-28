@@ -1,11 +1,11 @@
 .homeCont{
-    height: 100vmax;
+    height: auto;
     width: 100%;
     background-color: rgb(245, 224, 105);
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
 }
 
 .navbarTop{
@@ -15,16 +15,52 @@
     border-left: solid gray 2px;
     border-right: solid gray 2px;
     border-bottom: solid gray 2px;
+    display: flex;
+    flex-direction: row;
 }
 
 .logoText{
     color: whitesmoke;
 }
 
+.moveRight{
+    display: flex;
+    flex-direction: row;
+    margin-top: .50%;
+    margin-left: 80%;
+}
+
+#navBtn{
+    border-left: solid whitesmoke 1px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    /* border: none; */
+    color: whitesmoke;
+    /* padding-left: 1%; */
+    /* margin-left: 3%; */
+}
+
+/* .navBtnHome{
+
+}
+
+.navBtnAccount{
+
+}
+
+.navBtnLogout{
+
+} */
+
 .mainCont{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 .blogContainer{
@@ -32,9 +68,11 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 75%;
-    border: solid gray 3px;
+    width: 70%;
+    /* border: solid gray 3px; */
     margin-top: 2%;
+    border: none;
+    background-color: transparent;
     justify-content: flex-end;
     margin-bottom: 2%;
 }
@@ -45,6 +83,9 @@
     position: relative;
     /* background-image: url('../Images/895bd563-landscape-mountain-mountain-peak-52710-1024x683.jpg'); */
     background-size: cover;
+    border-top: solid gray 3px;
+    border-left: solid gray 3px;
+    border-right: solid gray 3px;
 }
 
 .blogTitle{
@@ -56,11 +97,12 @@
 }
 
 .blogInfoCont{
-    height: 30%;
+    height: 40%;
     width: 100%;
     background-color: whitesmoke;
     position: relative;
     border-top: solid gray 2px;
+    margin-bottom: -2.99%;
 }
 
 .blogSnippet{
@@ -88,6 +130,9 @@
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
+    border-left: solid gray 3px;
+    border-right: solid gray 3px;
+    border-bottom: solid gray 3px;
 }
 
 .authorCont{
@@ -102,14 +147,14 @@
 .authorImg{
     /* height: 60px; */
     /* width: 90px; */
-    height: 100%;
-    width: 34%;
+    height: 50px;
+    width: 60px;
     border-radius: 60px;
     background-color: rgb(172, 172, 172);
     border: solid black 1px;
     z-index: 100;
-    margin-top: .50%;
-    margin-bottom: 5%;
+    /* margin-top: .50%;
+    margin-bottom: 5%; */
 }
 
 .authorUsername{
@@ -151,6 +196,6 @@
 
 .likeCountText{
     font-size: 20px;
-    padding-top: 50%;
+    /* padding-top: 50%; */
     padding-right: .25%;    
 }

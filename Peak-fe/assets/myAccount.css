@@ -1,7 +1,147 @@
 .myAccountCont{
     height: 100%;
     width: 100%;
-    background-color: darkorchid;
+    background-color: rgb(245, 224, 105);
     overflow-y: scroll;
     overflow-x: hidden;
+    /* display: flex;
+    flex-direction: row; */
 }
+
+.navbarTop{
+    height: 10%;
+    width: 100%;
+    background-color: rgb(177, 157, 47);
+    border-left: solid gray 2px;
+    border-right: solid gray 2px;
+    border-bottom: solid gray 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logoText{
+    color: whitesmoke;
+}
+
+.moveRight{
+    display: flex;
+    flex-direction: row;
+    margin-top: .50%;
+    margin-left: 80%;
+}
+
+#navBtn{
+    border-left: solid whitesmoke 1px;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    /* border: none; */
+    color: whitesmoke;
+    /* padding-left: 1%; */
+    /* margin-left: 3%; */
+}
+
+.accountDetailsCont{
+    height: 100%;
+    width: 100%;
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: row;
+}
+
+.accountDetailsDiv{
+    height: 70%;
+    width: 90%;
+    /* background-color: red; */
+    /* background-color: whitesmoke; */
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftColumn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid gray 2px;
+    border-left: solid gray 2px;
+    border-bottom: solid gray 2px;
+    text-align: center;
+}
+
+.nameDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.userNameDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.emailDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.ageDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.rightColumn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid gray 2px;
+    border-right: solid gray 2px;
+    border-bottom: solid gray 2px;
+    text-align: center;
+}
+
+.locationDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.jobTitleDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+.registerDateDiv{
+    height: 8%;
+    width: 50%;
+    background-color: whitesmoke;
+    border: solid black 2px;
+}
+
+/* .topPostsDiv{
+    height: 10%;
+    width: 10%;
+    background-color: whitesmoke;
+} */

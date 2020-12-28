@@ -12,18 +12,6 @@ $(async () => {
     })
 })
 
-// const idk = async function() {
-//     if(allPosts === null) {
-//         setTimeout(() => {
-//             idk()
-//         } , 3 * 90)
-//     }else{
-//         console.log(allPosts)
-//         return
-//     }
-// }
-// idk()
-
 const idk = async function() {
     if(allPosts === null) {
         setTimeout(() => {
@@ -33,18 +21,12 @@ const idk = async function() {
     await allPosts.map((index , myKey) => {
         console.log(index)
         myKey = index.id;
-        // var getBlogContainer = document.getElementById('blogContainer');
         var getMainCont = document.getElementById('mainCont');
-
-        var createBlogContainer = document.createElement('div');
-        // var createBlogContainer = document.getElementById('blogContainer');
-
+        var createBlogContainer = document.createElement('button');
         createBlogContainer.setAttribute('class' , 'blogContainer');
         var createblogImg = document.createElement('div');
         createblogImg.setAttribute('class' , 'imgCont');
         createblogImg.style.backgroundImage = `url(${index.blog_img})`
-        // createblogImg.setAttribute('background-image: url' , index.blog_img);
-        // createblogImg.innerHTML = `https://image.freepik.com/free-vector/sunset-mountain-landscape_1048-10626.jpg`;
         var createBlogTitle = document.createElement('div');
         createBlogTitle.setAttribute('class' , 'blogTitle');
         createBlogTitle.innerHTML = index.post_title;
@@ -76,9 +58,6 @@ const idk = async function() {
         createLikeHeartImg.innerHTML =`<i class="far fa-heart">`
 
 
-
-
-
         getMainCont.append(createBlogContainer);
         createBlogContainer.appendChild(createblogImg);
         createblogImg.appendChild(createBlogTitle);
@@ -92,9 +71,7 @@ const idk = async function() {
         getAuthorUsernameDiv.append(getUsernameText);
         getOtherInfoDiv.append(createLikeCont);
         createLikeCont.appendChild(createLikeCountText);
-        createLikeCont.appendChild(createLikeHeartImg);
-
-        
+        createLikeCont.appendChild(createLikeHeartImg);        
     })
 }
 }
@@ -103,4 +80,15 @@ $(function(){
     setTimeout(() => {
         idk()
     } , 10 * 60)
+
+
+    $(".navBtnHome").on("click" , function(){
+        window.location.replace("file:///Users/logan/Desktop/Peak/Peak-fe/Screens/home.html")
+    })
+    $(".navBtnAccount").on("click" , function(){
+        window.location.replace("file:///Users/logan/Desktop/Peak/Peak-fe/Screens/myaccount.html")
+    })
+    $(".navBtnLogout").on("click" , function(){
+        window.location.replace("file:///Users/logan/Desktop/Peak/Peak-fe/Screens/login.html")
+    })
 })

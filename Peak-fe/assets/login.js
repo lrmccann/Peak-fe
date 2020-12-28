@@ -6,7 +6,9 @@ $(".closeModalBtn").on("click" , function(){
     $(".loginModal").css('visibility' , 'hidden')
 })
 
-localStorage.clear()
+$(() => {
+    localStorage.clear()
+})
 
 $(function() {
     $(".modalLogin").on("click" , async function() {
@@ -40,7 +42,7 @@ $(function() {
                     localStorage.setItem("city" , index.city )
                     localStorage.setItem("zipcode" , index.zipcode )
                     localStorage.setItem("jobTitle" , index.job_title )
-                    localStorage.setItem("registerData" , index.register_date )
+                    localStorage.setItem("registerDate" , index.register_date )
                 })
                 localStorage.setItem("sessionToken" , sessionToken)
             })

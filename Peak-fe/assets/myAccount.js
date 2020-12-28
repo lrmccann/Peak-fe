@@ -1,0 +1,26 @@
+$(() => {
+    const firstName = localStorage.getItem('firstName')
+    const lastName = localStorage.getItem('lastName')
+    const userName = localStorage.getItem('userName')
+    const email = localStorage.getItem('email')
+    const age = localStorage.getItem('age')
+    const city = localStorage.getItem('city')
+    const zipcode = localStorage.getItem('zipcode')
+    const jobTitle = localStorage.getItem('jobTitle')
+    const registerDate = localStorage.getItem('registerDate')
+    var getNameDiv = document.getElementById('nameDiv');
+    getNameDiv.innerHTML = `${firstName}` + " " +  `${lastName}`;
+    var getUserNameDiv = document.getElementById('userNameDiv');
+    getUserNameDiv.innerHTML = userName;
+    var getEmailDiv = document.getElementById('emailDiv');
+    getEmailDiv.innerHTML = email;
+    var getAgeDiv = document.getElementById('ageDiv');
+    getAgeDiv.innerHTML = age;
+    var getLocationDiv = document.getElementById('locationDiv');
+    getLocationDiv.innerHTML = `${city}` + " , " + `${zipcode}`;
+    var getJobTitleDiv = document.getElementById('jobTitleDiv');
+    getJobTitleDiv.innerHTML = jobTitle;
+    var getRegisterDateDiv = document.getElementById('registerDateDiv');
+    var trimRegisterDate = registerDate.slice(0 , 10)
+    getRegisterDateDiv.innerHTML = trimRegisterDate;
+})

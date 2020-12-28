@@ -9,8 +9,39 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container-fluid myAccountCont">
+        <div class="container-fixed myAccountCont">
+            <div class="navbarTop">
+                <h2 class="logoText">Peak</h2>
+                <div class="moveRight">
+                <button id="navBtn" class="navBtnHome"><h6>Home</h6></button>
+                <button id="navBtn" class="navBtnAccount"><h6>My Account</h6></button>
+                <button id="navBtn" class="navBtnLogout"><h6>Sign Out</h6></button>
+                </div>
+            </div>
+            <div class="accountDetailsCont" id="accountDetailsCont">
+                <div class="accountDetailsDiv">
+                    <div class="leftColumn">
+                    <!-- <h6>First Name</h6> -->
+                    <div id="nameDiv" class="nameDiv"></div>
+                    <!-- <h6>Last Name</h6> -->
+                    <!-- <div class="lastNameDiv"></div> -->
+                    <div id="userNameDiv" class="userNameDiv"></div>
+                    <div id="emailDiv" class="emailDiv"></div>
+                    <div id="ageDiv" class="ageDiv"></div>
+                </div>
+                <div class="rightColumn">
+                    <div id="locationDiv" class="locationDiv"></div>
+                    <!-- <div id="cityDiv" class="cityDiv"></div>
+                    <div id="zipcodeDiv" class="zipcodeDiv"></div> -->
+                    <div id="jobTitleDiv" class="jobTitleDiv"></div>
+                    <div id="registerDateDiv" class="registerDateDiv"></div>
+                        </div>
+                </div>
+                <div class="topPostsDiv">
 
+                    </div>
+
+            </div>
 
 
 
@@ -26,5 +57,6 @@
         </script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="../assets/myAccount.js"></script>
+        <script src="../assets/navBarMain.js"></script>
     </body>
 </html>
